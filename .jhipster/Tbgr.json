@@ -1,0 +1,33 @@
+{
+  "name": "Tbgr",
+  "fields": [
+    {
+      "fieldName": "board",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "village",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tbgr",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20201120171654",
+  "entityTableName": "tbgr",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

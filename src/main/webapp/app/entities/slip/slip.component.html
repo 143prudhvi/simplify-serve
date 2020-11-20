@@ -1,0 +1,71 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="simplifyServeApp.slip.home.title">Slips</span>
+
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-slip" [routerLink]="['/slip/new']">
+            <fa-icon icon="plus"></fa-icon>
+            <span  jhiTranslate="simplifyServeApp.slip.home.createLabel">
+            Create a new Slip
+            </span>
+        </button>
+    </h2>
+
+    <jhi-alert-error></jhi-alert-error>
+
+    <jhi-alert></jhi-alert>
+
+    <div class="alert alert-warning" id="no-result" *ngIf="slips?.length === 0">
+        <span jhiTranslate="simplifyServeApp.slip.home.notFound">No slips found</span>
+    </div>
+
+    <div class="table-responsive" id="entities" *ngIf="slips && slips.length > 0">
+        <table class="table table-striped" aria-describedby="page-heading">
+            <thead>
+                <tr>
+                    <th scope="col" ><span jhiTranslate="global.field.id">ID</span></th>
+                    <th scope="col" ><span jhiTranslate="simplifyServeApp.slip.date">Date</span></th>
+                    <th scope="col" ><span jhiTranslate="simplifyServeApp.slip.tbgr">Tbgr</span></th>
+                    <th scope="col" ><span jhiTranslate="simplifyServeApp.slip.grade">Grade</span></th>
+                    <th scope="col" ><span jhiTranslate="simplifyServeApp.slip.lotno">Lotno</span></th>
+                    <th scope="col" ><span jhiTranslate="simplifyServeApp.slip.weight">Weight</span></th>
+                    <th scope="col" ><span jhiTranslate="simplifyServeApp.slip.price">Price</span></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let slip of slips ;trackBy: trackId">
+                    <td><a [routerLink]="['/slip', slip.id, 'view']">{{ slip.id }}</a></td>
+                    <td>{{ slip.date | date:'medium' }}</td>
+                    <td>{{ slip.tbgr }}</td>
+                    <td>{{ slip.grade }}</td>
+                    <td>{{ slip.lotno }}</td>
+                    <td>{{ slip.weight }}</td>
+                    <td>{{ slip.price }}</td>
+                    <td class="text-right">
+                        <div class="btn-group">
+                            <button type="submit"
+                                    [routerLink]="['/slip', slip.id, 'view']"
+                                    class="btn btn-info btn-sm">
+                                <fa-icon icon="eye"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                            </button>
+
+                            <button type="submit"
+                                    [routerLink]="['/slip', slip.id, 'edit']"
+                                    class="btn btn-primary btn-sm">
+                                <fa-icon icon="pencil-alt"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                            </button>
+
+                            <button type="submit" (click)="delete(slip)"
+                                    class="btn btn-danger btn-sm">
+                                <fa-icon icon="times"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
