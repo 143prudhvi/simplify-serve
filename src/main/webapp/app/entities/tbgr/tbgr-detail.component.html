@@ -1,0 +1,42 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="tbgr">
+            <h2><span jhiTranslate="simplifyServeApp.tbgr.detail.title">Tbgr</span> {{ tbgr.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="simplifyServeApp.tbgr.board">Board</span></dt>
+                <dd>
+                    <span>{{ tbgr.board }}</span>
+                </dd>
+                <dt><span jhiTranslate="simplifyServeApp.tbgr.village">Village</span></dt>
+                <dd>
+                    <span>{{ tbgr.village }}</span>
+                </dd>
+                <dt><span jhiTranslate="simplifyServeApp.tbgr.tbgr">Tbgr</span></dt>
+                <dd>
+                    <span>{{ tbgr.tbgr }}</span>
+                </dd>
+                <dt><span jhiTranslate="simplifyServeApp.tbgr.name">Name</span></dt>
+                <dd>
+                    <span>{{ tbgr.name }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/tbgr', tbgr.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

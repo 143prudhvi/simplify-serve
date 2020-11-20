@@ -1,0 +1,22 @@
+{
+  "simplifyServeApp": {
+    "board": {
+      "home": {
+        "title": "Boards",
+        "createLabel": "కొత్త Board  సృష్టించండి",
+        "createOrEditLabel": "Board సృష్టించండి లేదా సవరించండి",
+        "notFound": "No Boards found"
+      },
+      "created": "{{ param }} ఐడీ తో ఒక కొత్త Board సృష్టించబడినది",
+      "updated": "{{ param }} ఐడీ తో ఒక కొత్త Board సవరించబడినది",
+      "deleted": "{{ param }} ఐడీ తో ఒక కొత్త Board తొలగించబడినది",
+      "delete": {
+        "question": "మీరు Board {{ id }} ఖచ్చితంగా తొలగించాలనుకుంటున్నారా?"
+      },
+      "detail": {
+        "title": "Board"
+      },
+      "board": "Board"
+    }
+  }
+}

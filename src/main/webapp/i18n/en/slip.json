@@ -1,0 +1,27 @@
+{
+  "simplifyServeApp": {
+    "slip": {
+      "home": {
+        "title": "Slips",
+        "createLabel": "Create a new Slip",
+        "createOrEditLabel": "Create or edit a Slip",
+        "notFound": "No Slips found"
+      },
+      "created": "A new Slip is created with identifier {{ param }}",
+      "updated": "A Slip is updated with identifier {{ param }}",
+      "deleted": "A Slip is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Slip {{ id }}?"
+      },
+      "detail": {
+        "title": "Slip"
+      },
+      "date": "Date",
+      "tbgr": "Tbgr",
+      "grade": "Grade",
+      "lotno": "Lotno",
+      "weight": "Weight",
+      "price": "Price"
+    }
+  }
+}

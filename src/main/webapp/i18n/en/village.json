@@ -1,0 +1,23 @@
+{
+  "simplifyServeApp": {
+    "village": {
+      "home": {
+        "title": "Villages",
+        "createLabel": "Create a new Village",
+        "createOrEditLabel": "Create or edit a Village",
+        "notFound": "No Villages found"
+      },
+      "created": "A new Village is created with identifier {{ param }}",
+      "updated": "A Village is updated with identifier {{ param }}",
+      "deleted": "A Village is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Village {{ id }}?"
+      },
+      "detail": {
+        "title": "Village"
+      },
+      "board": "Board",
+      "village": "Village"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Grade",
+  "fields": [
+    {
+      "fieldName": "grade",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20201120171954",
+  "entityTableName": "grade",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

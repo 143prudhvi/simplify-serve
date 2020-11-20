@@ -1,0 +1,23 @@
+{
+  "simplifyServeApp": {
+    "village": {
+      "home": {
+        "title": "Villages",
+        "createLabel": "కొత్త Village  సృష్టించండి",
+        "createOrEditLabel": "Village సృష్టించండి లేదా సవరించండి",
+        "notFound": "No Villages found"
+      },
+      "created": "{{ param }} ఐడీ తో ఒక కొత్త Village సృష్టించబడినది",
+      "updated": "{{ param }} ఐడీ తో ఒక కొత్త Village సవరించబడినది",
+      "deleted": "{{ param }} ఐడీ తో ఒక కొత్త Village తొలగించబడినది",
+      "delete": {
+        "question": "మీరు Village {{ id }} ఖచ్చితంగా తొలగించాలనుకుంటున్నారా?"
+      },
+      "detail": {
+        "title": "Village"
+      },
+      "board": "Board",
+      "village": "Village"
+    }
+  }
+}

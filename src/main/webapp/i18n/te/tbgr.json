@@ -1,0 +1,25 @@
+{
+  "simplifyServeApp": {
+    "tbgr": {
+      "home": {
+        "title": "Tbgrs",
+        "createLabel": "కొత్త Tbgr  సృష్టించండి",
+        "createOrEditLabel": "Tbgr సృష్టించండి లేదా సవరించండి",
+        "notFound": "No Tbgrs found"
+      },
+      "created": "{{ param }} ఐడీ తో ఒక కొత్త Tbgr సృష్టించబడినది",
+      "updated": "{{ param }} ఐడీ తో ఒక కొత్త Tbgr సవరించబడినది",
+      "deleted": "{{ param }} ఐడీ తో ఒక కొత్త Tbgr తొలగించబడినది",
+      "delete": {
+        "question": "మీరు Tbgr {{ id }} ఖచ్చితంగా తొలగించాలనుకుంటున్నారా?"
+      },
+      "detail": {
+        "title": "Tbgr"
+      },
+      "board": "Board",
+      "village": "Village",
+      "tbgr": "Tbgr",
+      "name": "Name"
+    }
+  }
+}
