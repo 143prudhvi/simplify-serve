@@ -6,7 +6,7 @@
     <groupId>com.simplify.myapp</groupId>
     <artifactId>simplify-serve</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
     <name>Simplify Serve</name>
 
     <repositories>
