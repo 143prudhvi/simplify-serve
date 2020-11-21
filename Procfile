@@ -1,2 +1,2 @@
   
-web: java -jar -Dserver.port=$PORT target/flashadealwebservice-0.0.1-SNAPSHOT.war
+web: java -jar -Dserver.port=$PORT target/simplify-serve-0.0.1-SNAPSHOT.war
